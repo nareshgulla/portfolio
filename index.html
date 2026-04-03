@@ -609,11 +609,16 @@
 
 <!-- HERO -->
 <section class="hero" id="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-dots">
-    <!-- 40 dots -->
-    <script>document.write(Array(40).fill('<span></span>').join(''))</script>
-  </div>
+  .hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* CENTER horizontally */
+  text-align: center; /* CENTER text */
+  padding: 120px 6vw 80px;
+  position: relative;
+  overflow: hidden;
+}
   <div class="hero-content">
     <div class="hero-badge">Available for new projects</div>
     <h1>I Help Businesses Generate <em>Qualified Leads</em> Through Data-Driven Marketing</h1>
