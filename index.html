@@ -575,11 +575,6 @@
     background: none; border: none; cursor: pointer;
     font-size: 1.5rem; color: var(--ink);
   }
-.hero-content {
-  position: relative;
-  z-index: 1;
-  max-width: 680px;
-}
 </style>
 </head>
 <body>
@@ -611,6 +606,14 @@
   <a href="#tools" onclick="toggleMenu()">Tools</a>
   <a href="#contact" onclick="toggleMenu()">Contact</a>
 </div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-dots">
+    <!-- 40 dots -->
+    <script>document.write(Array(40).fill('<span></span>').join(''))</script>
+  </div>
   <div class="hero-content">
     <div class="hero-badge">Available for new projects</div>
     <h1>I Help Businesses Generate <em>Qualified Leads</em> Through Data-Driven Marketing</h1>
