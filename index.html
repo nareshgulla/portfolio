@@ -575,6 +575,54 @@
     background: none; border: none; cursor: pointer;
     font-size: 1.5rem; color: var(--ink);
   }
+
+
+
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-image {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-image img {
+  max-width: 420px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: var(--shadow-lg);
+}
+
+
+ @media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero-image {
+    justify-content: center;
+    margin-top: 40px;
+  }
+}
+
+
+
+.about-img-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+ 
+
+
+ 
 </style>
 </head>
 <body>
@@ -642,13 +690,20 @@
       </div>
     </div>
   </div>
+    <!-- RIGHT SIDE (MOVE HERE) -->
+   <div class="hero-image">
+  <img src="https://media.licdn.com/dms/image/v2/D5603AQEvDIQBWYFTog/profile-displayphoto-scale_400_400/B56Zq8.1xCKwAo-/0/1764107182876?e=1777507200&v=beta&t=-zUH1iLDC42qfO0cThM0QTHIZhMrPzOLh-5-31NJaZ0" alt="Hero Image">
+</div>
+
 </section>
 
 <!-- ABOUT -->
 <section class="about" id="about">
   <div class="about-grid">
     <div class="about-img-wrap reveal">
-      <div class="about-img-placeholder">🎯</div>
+    <div class="about-img-placeholder">
+  <img src="https://media.licdn.com/dms/image/v2/D5603AQEvDIQBWYFTog/profile-displayphoto-scale_400_400/B56Zq8.1xCKwAo-/0/1764107182876?e=1777507200&v=beta&t=-zUH1iLDC42qfO0cThM0QTHIZhMrPzOLh-5-31NJaZ0" alt="About Image">
+</div>
       <div class="about-badge">
         <strong>7+</strong>
         <span>Years in Digital<br>Marketing</span>
